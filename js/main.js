@@ -1,6 +1,7 @@
 const app = new Vue ({
     el: '#root',
     data: {
+        currentIndex: 0,
         images: [
             {
                 src: 'img/01.jpg',
