@@ -30,4 +30,9 @@ const app = new Vue ({
             },
         ],    
     },
+    methods: {
+        nextImage() {
+            this.currentIndex++;
+        }
+    }
 });
