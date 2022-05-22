@@ -31,8 +31,22 @@ const app = new Vue ({
         ],    
     },
     methods: {
+        prevImage() {
+            if(this.currentIndex === 0) {
+                this.currentIndex = this.images.length - 1;
+            } else {
+                this.currentIndex--;
+            }
+
+        },
+
         nextImage() {
-            this.currentIndex++;
-        }
-    }
+            if(this.currentIndex === this.images.length - 1) {
+                this.currentIndex = 0;
+            } else {
+                this.currentIndex++;
+            }
+            
+        },
+    },
 });
