@@ -48,5 +48,9 @@ const app = new Vue ({
             }
             
         },
+
+        changeImage(index) {
+            this.currentIndex = index;
+        }
     },
 });
